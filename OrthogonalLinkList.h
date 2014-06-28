@@ -11,6 +11,10 @@ public:
 	void insert(int row, int column, int data);
 	void display()const;
 
+	/* Gets the element in the selected position */
+	int getElementData( int _row , int _column ) const;
+	OrthogonalLinkList& operator +( const OrthogonalLinkList& _other );
+
 private:
 	Node* head_node;
 
