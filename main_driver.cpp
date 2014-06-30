@@ -18,8 +18,7 @@ int main()
 	S1.insert( 3 , 2 , 8 );
 	S1.insert( 3 , 3 , 9 );
 
-	//S1.insert( 1 , 1 , 124 );
-
+	cout << "First Matrix:" << endl;
 	S1.display();
 	cout << endl;
 
@@ -27,12 +26,15 @@ int main()
 	S2.insert( 1 , 2 , 7 );
 	S2.insert( 1 , 3 , 1 );
 	S2.insert( 2 , 1 , 2 );
+	cout << "Second Matrix:" << endl;
+
 	S2.display();
 
-	S1 = S1 + S2;
+	OrthogonalLinkList S3 = S1 + S2;
 	cout << endl;
+	cout << "Sum Matrix:" << endl;
 
-	S1.display();
+	S3.display();
 
-	return 0;
+ 	return 0;
 }

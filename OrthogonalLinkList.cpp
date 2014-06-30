@@ -169,7 +169,7 @@ void  OrthogonalLinkList::display()const
 			}
 			else
 			{
-				cout << 0 << " ";
+				cout << 0 << "   ";
 			}
 		}
 		ptr = ptr->next_row;
