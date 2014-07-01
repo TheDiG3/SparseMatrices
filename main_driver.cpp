@@ -5,8 +5,8 @@ using namespace std;
 
 int main()
 {
-	OrthogonalLinkList S1( 3 , 3 );
-	OrthogonalLinkList S2( 3 , 3 );
+	OrthogonalLinkList S1( 4 , 3 );
+	OrthogonalLinkList S2( 4 , 3 );
 
 	S1.insert( 1 , 1 , 1 );
 	S1.insert( 1 , 2 , 2 );
@@ -26,10 +26,10 @@ int main()
 	S2.insert( 1 , 2 , 7 );
 	S2.insert( 1 , 3 , 1 );
 	S2.insert( 2 , 1 , 2 );
+	S2.insert( 4 , 3 , 1 );
 	cout << "Second Matrix:" << endl;
 
 	S2.display();
-
 	OrthogonalLinkList S3 = S1 + S2;
 	cout << endl;
 	cout << "Sum Matrix:" << endl;
