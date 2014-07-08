@@ -304,23 +304,25 @@ void  OrthogonalLinkList::display()const
 	ptr = head_node->next_row->next_column;
 
 
-	for ( int i = 1; i <= head_node->row; i++ )
+	for (int i = 1; i <= head_node->row; i++)
 	{
-		for ( int j = 1; j <= head_node->column; j++ )
+		for (int j = 1; j <= head_node->column; j++)
 		{
-			if ( ptr->column == j && ptr->row == i )
+			if (ptr->column == j && ptr->row == i)
 			{
-				cout << ptr->data << "   ";
+				cout << setw(5) << ptr->data;
 				ptr = ptr->next_column;
 			}
 			else
 			{
-				cout << 0 << "   ";
+				cout << setw(5) << 0;
 			}
 		}
 		ptr = ptr->next_row;
 		ptr = ptr->next_column;
 		cout << endl;
 	}
+	cout << endl;
 
 }
+

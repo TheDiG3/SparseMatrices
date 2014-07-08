@@ -22,9 +22,9 @@ int main()
 	S1.display();
 	cout << endl;
 
-	S2.insert( 1 , 1 , 3 );
-	S2.insert( 1 , 2 , 7 );
-	S2.insert( 1 , 3 , 1 );
+	S2.insert( 1 , 1 , 100 );
+	S2.insert( 1 , 2 , 2134 );
+	S2.insert( 1 , 3 , 313 );
 	S2.insert( 2 , 1 , 2 );
 	S2.insert( 4 , 3 , 1 );
 	cout << "Second Matrix:" << endl;
@@ -33,6 +33,8 @@ int main()
 	OrthogonalLinkList S3 = S1 + S2;
 	cout << endl;
 	cout << "Sum Matrix:" << endl;
+
+
 
 	S3.display();
 
