@@ -1,4 +1,4 @@
-SparseMatrices
+SparseMatrices - John Leblanc & Simone Di Gravio
 ==============
 
 Summary
